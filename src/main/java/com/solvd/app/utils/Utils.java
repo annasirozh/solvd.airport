@@ -30,13 +30,12 @@ public class Utils {
         return flights;
     }
 
-    public static Flight findACheapFlight(List<Flight> flights) {
+    public static Optional<Flight> findACheapFlight(List<Flight> flights) {
 
-        /*Optional<Flight> cheapFlight = flights.stream().filter((flightElement)->min.flightElement.min(String::compareTo).get()
-        Flight resultCheapFlight = cheapFlight.get();
-        return resultCheapFlight;
-        //collection.stream().min(String::compareTo).get()*/
-        return null;
+        // использование терминальной операции min в StreamApi(6)
+        Optional<Flight> cheapFlight = Optional.of(flights.stream().min(Flight::compare).get());
+        cheapFlight.get();
+        return cheapFlight;
     }
 
     public static Flight searchOfFlight(List<Flight> flights, String nameOfCountry) {
@@ -60,20 +59,21 @@ public class Utils {
                 TicketClass.ECONOMY, new ClassOfTickets(TicketClass.ECONOMY, 5, 50, 1));
     }
 
-    public static List<Country> createListOfCountry() {
+    public static Stream<Country> createListOfCountry() {
 
         //использование stream (3)
-        List<Country> countries = Arrays.asList(new Country("Belarus", "Minsk"), new Country("Poland", "Warshawa"), new Country("Russia", "Sochi"));
-        Stream<Country> countryStream = countries.stream();
-        return countries;
+        Stream<Country> countryStream = Stream.of(new Country("Belarus", "Minsk"),
+                new Country("Poland", "Warshawa"), new Country("Russia", "Sochi"));
+        /*List<Country> countries = Arrays.asList(new Country("Belarus", "Minsk"),
+                new Country("Poland", "Warshawa"), new Country("Russia", "Sochi"));
+        Stream<Country> countryStream = countries.stream();*/
+        return countryStream;
     }
 
-    public static LinkedList<Pilot> createPilotList() {
-        LinkedList<Pilot> pilots = new LinkedList<>();
-        Pilot pilot1 = new Pilot("Павел", "Кичкайло", "high");
-        Pilot pilot2 = new Pilot("Василий", "Зарницкий", "high");
-        pilots.add(pilot1);
-        pilots.add(pilot2);
+    public static List<Pilot> createPilotList() {
+    //использование конвейрного Stream API для создания коллекции(7)
+        List<Pilot> pilots = Stream.of(new Pilot("Павел", "Кичкайло", "high"),
+                new Pilot("Василий", "Зарницкий", "high")).toList();
         return pilots;
     }
 

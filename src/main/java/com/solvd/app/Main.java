@@ -7,11 +7,13 @@ import com.solvd.app.exceptions.EFoundFlightISNULL;
 import com.solvd.app.exceptions.ENameOfCountryIsNULL;
 import com.solvd.app.fileReader.FileIsReader;
 import com.solvd.app.flight.Flight;
-import com.solvd.app.functionalInterface.*;
+import com.solvd.app.functionalInterface.MCheck;
+import com.solvd.app.functionalInterface.MFunction;
 import com.solvd.app.myLinkedList.MyOwnLinkedlist;
 import com.solvd.app.person.Passenger;
 import com.solvd.app.person.Pilot;
 import com.solvd.app.plane.Plane;
+import com.solvd.app.reflection.Order;
 import com.solvd.app.tickets.Ticket;
 import com.solvd.app.utils.Utils;
 import org.apache.logging.log4j.LogManager;
@@ -20,14 +22,54 @@ import org.apache.logging.log4j.Logger;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.*;
 import java.text.ParseException;
 import java.util.*;
-import java.util.function.*;
+import java.util.function.Consumer;
+import java.util.function.IntFunction;
+import java.util.function.Predicate;
+import java.util.function.UnaryOperator;
+import java.util.stream.Stream;
 
 public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
 
-    public static void main(String[] args) throws ParseException, IOException, EFoundFlightISNULL {
+    public static void main(String[] args) throws ParseException, IOException, EFoundFlightISNULL, InvocationTargetException, IllegalAccessException, NoSuchMethodException {
+        Order order = new Order(3);
+        Class foundClass = order.getClass(); //получили доступ к классу
+        //вызов метода
+        Method getInformation = foundClass.getMethod("getInformation", int.class);
+        getInformation.invoke(order,3);
+        LOGGER.info("Constructor:");
+        Constructor[] constructors = foundClass.getDeclaredConstructors();
+        for (Constructor constructor : constructors) {
+            LOGGER.info(constructor.getName());
+            LOGGER.info(Modifier.toString(constructor.getModifiers()));
+            LOGGER.info(constructor.getGenericParameterTypes());
+            Parameter[] parameters = constructor.getParameters();
+            for (Parameter parametr : parameters) {
+                LOGGER.info(parametr.getType().getName());
+            }
+        }
+        LOGGER.info("Method:");
+        Method[] methods = foundClass.getDeclaredMethods();
+        for (Method method : methods) {
+            LOGGER.info("Name of methods:" + method.getName());
+            Parameter[] parameters = method.getParameters();
+            for (Parameter parametr : parameters) {
+                LOGGER.info(parametr.getType().getName());
+            }
+            LOGGER.info(Modifier.toString(method.getModifiers()));
+            LOGGER.info(method.getReturnType().getName());
+        }
+        LOGGER.info("Field:");
+        Field[] fields = foundClass.getDeclaredFields();
+        for (Field field:fields) {
+            LOGGER.info("Name of fields:" + field.getName());
+            LOGGER.info(Modifier.toString(field.getModifiers()));
+            LOGGER.info("Type of fields:" + field.getType());
+        }
+
         // подсчет уникальных значений
         FileIsReader.countTheNumberOfUniqueWordsInAFile();
         FileIsReader.reverseReaderFile();
@@ -53,26 +95,28 @@ public class Main {
         MCheck<Integer> result = x -> x > 0;
         LOGGER.info("Check: " + result.get(converterValue.apply(list.getByINdex(1))));
 
-        List<Country> countries = Utils.createListOfCountry();
+        Stream<Country> countries = Utils.createListOfCountry();
 
-        //использование функционального интерфейса Supplier
+       /* //использование функционального интерфейса Supplier
         Supplier<Country> randomNameOfCountry = () -> {
             int value = (int) (Math.random() * countries.size());
             return countries.get(value);
         };
-        LOGGER.info("Random country{}: ", randomNameOfCountry.get());
+        LOGGER.info("Random country{}: ", randomNameOfCountry.get());*/
 
-        LinkedList<Pilot> pilots = Utils.createPilotList();
+        List<Pilot> pilots = Utils.createPilotList();
         LOGGER.info("List Of pilot {}:", pilots);
 
-        List<Flight> flights = Utils.addFlights(countries);
+        List<Flight> flights = Utils.addFlights(countries.toList());
         Map<TicketClass, ClassOfTickets> classOfTicketsMap = Utils.addClassTicket();
+
+        LOGGER.info("cheap flight: " + Utils.findACheapFlight(flights));
 
         HashSet<Plane> planes = Utils.createPlaneList();
         LOGGER.info("List of available aircraft {}:", planes);
 
         List<Passenger> passengers = Utils.createPassengerList();
-        LOGGER.info("List of passengers");
+        LOGGER.info("List of passengers" + passengers);
 
         Scanner in = new Scanner(System.in);
         final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -138,6 +182,7 @@ public class Main {
         } else {
             LOGGER.info("Come back to us next time:)");
         }
+
 
     }
 }

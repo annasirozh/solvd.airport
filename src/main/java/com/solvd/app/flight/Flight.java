@@ -123,6 +123,12 @@ public class Flight implements DisplayInformation {
         return Objects.hash(departure, destination, distance, departureDate, departureTime, arrivalDate, travelTime, price);
     }
 
+    public static int compare(Flight fl1, Flight fl2) {
+        if (fl1.getPrice() > fl2.getPrice())
+            return 1;
+        return -1;
+    }
+
     @Override
     public void displayInformation() {
         LOGGER.info("Departure Of Country: {} \n City Of Country: {} \n Country Of Destination: {} \n  City of Destination: {} \n Distance: {} \n " +
