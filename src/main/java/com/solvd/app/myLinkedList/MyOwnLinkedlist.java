@@ -81,6 +81,7 @@ public class MyOwnLinkedlist<T> {
     }
 
     public void removeAll() {
+        //сделать стримы
         for (Node<T> x = firstNode; x != null; ) {
             Node<T> next = x.nextNode;
             x.current = null;

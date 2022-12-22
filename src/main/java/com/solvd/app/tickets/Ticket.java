@@ -1,20 +1,20 @@
 package com.solvd.app.tickets;
 
-import com.solvd.app.classesstickets.ClassOfTickets;
-import com.solvd.app.classesstickets.TicketClass;
 import com.solvd.app.flight.Flight;
 import com.solvd.app.person.Passenger;
 import com.solvd.app.plane.Plane;
+
+import java.util.Optional;
 
 public class Ticket {
 
     private int numberOfTicket;
     private Flight flight;
-    private Plane plane;
+    private Optional<Plane> plane;
     private Passenger passenger;
     private int price;
 
-    public Ticket(int numberOfTicket, Flight flight, Plane plane, Passenger passenger, int price) {
+    public Ticket(int numberOfTicket, Flight flight, Optional<Plane> plane, Passenger passenger, int price) {
         this.numberOfTicket = numberOfTicket;
         this.flight = flight;
         this.plane = plane;
@@ -38,11 +38,11 @@ public class Ticket {
         this.flight = flight;
     }
 
-    public Plane getPlane() {
+    public Optional<Plane> getPlane() {
         return plane;
     }
 
-    public void setPlane(Plane plane) {
+    public void setPlane(Optional<Plane> plane) {
         this.plane = plane;
     }
 

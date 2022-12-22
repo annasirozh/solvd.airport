@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.util.*;
+import java.util.function.*;
 
 public class Main {
     private static final Logger LOGGER = LogManager.getLogger(Main.class);
@@ -29,7 +30,7 @@ public class Main {
     public static void main(String[] args) throws ParseException, IOException, EFoundFlightISNULL {
         // подсчет уникальных значений
         FileIsReader.countTheNumberOfUniqueWordsInAFile();
-        FileIsReader.reverseReaderfile();
+        FileIsReader.reverseReaderFile();
 
         //работа с собственным linkedlist
         MyOwnLinkedlist<String> list = new MyOwnLinkedlist<>();
@@ -70,6 +71,9 @@ public class Main {
         HashSet<Plane> planes = Utils.createPlaneList();
         LOGGER.info("List of available aircraft {}:", planes);
 
+        List<Passenger> passengers = Utils.createPassengerList();
+        LOGGER.info("List of passengers");
+
         Scanner in = new Scanner(System.in);
         final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         LOGGER.info("Enter country:");
@@ -77,7 +81,7 @@ public class Main {
 
         if (nameOfCountry.trim().length() == 0) {
             try {
-                throw new ENameOfCountryIsNULL("Error:You have not entered a country");
+                throw new ENameOfCountryIsNULL ("Error:You have not entered a country");
             } catch (ENameOfCountryIsNULL e) {
                 throw new RuntimeException(e);
             }
@@ -97,6 +101,7 @@ public class Main {
             LOGGER.info("Our ticket class is: " + ticketClass);
             ClassOfTickets readTicketClass = classOfTicketsMap.get(ticketClass);
             price = Utils.getPriceOfFlight(foundFlight, readTicketClass);
+
             //использование функционального оператора UnaryOperator
             UnaryOperator<Integer> resultOfPrice = x -> x * 2;
             LOGGER.info("Result price: " + resultOfPrice.apply(price));
@@ -105,6 +110,7 @@ public class Main {
         }
         LOGGER.info("Do you want to buy a ticket? Enter 1 if yes, 0 if no.");
         int decisionVariable = in.nextInt();
+
         //использование функционального интерфейса IntFunction
         IntFunction<Integer> decisionVariable1 = x -> x;
         if (decisionVariable1.apply(decisionVariable) == 1) {
@@ -120,11 +126,15 @@ public class Main {
             LOGGER.info("Put passport number:");
             int numberOfPassport = in.nextInt();
 
-            Plane plane1 = new Plane(345, 6125, 590);
-            Passenger passengers = Utils.createPassengerList(surnamePassenger, nameOfPassenger, numberOfPassport);
-            LOGGER.info(passengers);
-            Ticket ticket = Utils.createTicketList(234, foundFlight, plane1, passengers,price);
+            Optional<Plane> randomPlane = Utils.getAPlaneFromTheList(planes);
+
+           // Plane plane1 = new Plane(345, 6125, 590);
+            Passenger passenger = Utils.addPassengerToList(nameOfPassenger,surnamePassenger,numberOfPassport,passengers);
+            LOGGER.info(passenger);
+            Ticket ticket = Utils.createTicketList(234, foundFlight, randomPlane, passenger,price);
             LOGGER.info("Our ticket:" + ticket);
+            long count = Utils.countHowManyTimesThePassengerUsedTheAirline(passengers,passenger);
+            LOGGER.info(count);
         } else {
             LOGGER.info("Come back to us next time:)");
         }

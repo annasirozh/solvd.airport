@@ -1,12 +1,16 @@
-2022-12-20 00:35:40,462 INFO c.s.a.Main [main] 3
-2022-12-20 00:35:40,478 INFO c.s.a.Main [main] 3
-2022-12-20 00:35:40,483 INFO c.s.a.Main [main] List Of country [Country{name='Belarus', city='Minsk'}, Country{name='Poland', city='Warshawa'}, Country{name='Russia', city='Sochi'}]:
-2022-12-20 00:35:40,485 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 00:35:40,497 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 00:35:40,499 INFO c.s.a.Main [main] Enter country:
-2022-12-20 00:35:47,347 INFO c.s.a.Main [main] Our country is: Poland
-2022-12-20 00:35:47,349 INFO c.s.a.Main [main] Your flight:
-2022-12-20 00:35:47,349 INFO c.s.a.f.Flight [main] Departure Of Country: Belarus 
+2022-12-23 00:50:17,844 INFO c.s.a.f.FileIsReader [main] Reversed string = d ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA
+2022-12-23 00:50:17,862 INFO c.s.a.Main [main] 3
+2022-12-23 00:50:17,863 INFO c.s.a.Main [main] 2
+2022-12-23 00:50:17,865 INFO c.s.a.Main [main] Converter value: 7
+2022-12-23 00:50:17,867 INFO c.s.a.Main [main] Check: true
+2022-12-23 00:50:17,872 INFO c.s.a.Main [main] Random countryCountry{name='Poland', city='Warshawa'}: 
+2022-12-23 00:50:17,873 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
+2022-12-23 00:50:17,884 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
+2022-12-23 00:50:17,886 INFO c.s.a.Main [main] List of passengers
+2022-12-23 00:50:17,890 INFO c.s.a.Main [main] Enter country:
+2022-12-23 00:50:23,322 INFO c.s.a.Main [main] Our country is: Poland
+2022-12-23 00:50:23,324 INFO c.s.a.Main [main] Your flight:
+2022-12-23 00:50:23,325 INFO c.s.a.f.Flight [main] Departure Of Country: Belarus 
  City Of Country: Minsk 
  Country Of Destination: Poland 
   City of Destination: Warshawa 
@@ -17,281 +21,14 @@
  Travel Time 12 
  Price 8262 
 
-2022-12-20 00:35:47,350 INFO c.s.a.Main [main] Check out the rate: Economy,Comfort, Business...
-2022-12-20 00:37:52,688 INFO c.s.a.Main [main] 3
-2022-12-20 00:37:52,691 INFO c.s.a.Main [main] 3
-2022-12-20 00:37:52,696 INFO c.s.a.Main [main] List Of country [Country{name='Belarus', city='Minsk'}, Country{name='Poland', city='Warshawa'}, Country{name='Russia', city='Sochi'}]:
-2022-12-20 00:37:52,699 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 00:37:52,708 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 00:37:52,711 INFO c.s.a.Main [main] Enter country:
-2022-12-20 00:38:03,221 INFO c.s.a.Main [main] Our country is: Russia
-2022-12-20 00:38:03,223 INFO c.s.a.Main [main] Your flight:
-2022-12-20 00:38:03,224 INFO c.s.a.f.Flight [main] Departure Of Country: Belarus 
- City Of Country: Minsk 
- Country Of Destination: Russia 
-  City of Destination: Sochi 
- Distance: 967 
- Departure Date: 2022-12-14T00:00:00.000+0300 
- Departure Time 16:00 
- Arrival Date 2022-12-15T00:00:00.000+0300 
- Travel Time 8 
- Price 9500 
-
-2022-12-20 00:38:03,225 INFO c.s.a.Main [main] Check out the rate: Economy,Comfort, Business...
-2022-12-20 00:38:09,901 INFO c.s.a.Main [main] Our ticket class is: ECONOMY
-2022-12-20 00:38:09,903 INFO c.s.a.Main [main] Price:9550
-2022-12-20 00:38:09,903 INFO c.s.a.Main [main] Do you want to buy a ticket? Enter 1 if yes, 0 if no.
-2022-12-20 00:42:35,555 INFO c.s.a.Main [main] 3
-2022-12-20 00:42:35,558 INFO c.s.a.Main [main] 3
-2022-12-20 00:42:35,563 INFO c.s.a.Main [main] List Of country [Country{name='Belarus', city='Minsk'}, Country{name='Poland', city='Warshawa'}, Country{name='Russia', city='Sochi'}]:
-2022-12-20 00:42:35,565 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 00:42:35,573 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 00:42:35,577 INFO c.s.a.Main [main] Enter country:
-2022-12-20 00:42:41,597 INFO c.s.a.Main [main] Our country is: Poland
-2022-12-20 00:42:41,599 INFO c.s.a.Main [main] Your flight:
-2022-12-20 00:42:41,600 INFO c.s.a.f.Flight [main] Departure Of Country: Belarus 
- City Of Country: Minsk 
- Country Of Destination: Poland 
-  City of Destination: Warshawa 
- Distance: 867 
- Departure Date: 2022-12-27T00:00:00.000+0300 
- Departure Time 08:00 
- Arrival Date 2022-12-28T00:00:00.000+0300 
- Travel Time 12 
- Price 8262 
-
-2022-12-20 00:42:41,601 INFO c.s.a.Main [main] Check out the rate: Economy,Comfort, Business...
-2022-12-20 00:42:46,326 INFO c.s.a.Main [main] Our ticket class is: ECONOMY
-2022-12-20 00:42:46,327 INFO c.s.a.Main [main] Price:8312
-2022-12-20 00:42:46,327 INFO c.s.a.Main [main] Do you want to buy a ticket? Enter 1 if yes, 0 if no.
-2022-12-20 00:42:50,270 INFO c.s.a.Main [main] Put your surname:
-2022-12-20 00:42:55,880 INFO c.s.a.Main [main] Put your name:
-2022-12-20 00:42:59,511 INFO c.s.a.Main [main] HelloAnna!
-2022-12-20 00:42:59,511 INFO c.s.a.Main [main] Put passport number:
-2022-12-20 00:50:02,468 INFO c.s.a.Main [main] 3
-2022-12-20 00:50:02,471 INFO c.s.a.Main [main] 3
-2022-12-20 00:50:02,476 INFO c.s.a.Main [main] Random countryCountry{name='Belarus', city='Minsk'}:
-2022-12-20 00:50:02,478 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 00:50:02,486 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 00:50:02,488 INFO c.s.a.Main [main] Enter country:
-2022-12-20 00:50:18,335 INFO c.s.a.Main [main] 3
-2022-12-20 00:50:18,338 INFO c.s.a.Main [main] 3
-2022-12-20 00:50:18,343 INFO c.s.a.Main [main] Random countryCountry{name='Poland', city='Warshawa'}:
-2022-12-20 00:50:18,345 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 00:50:18,353 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 00:50:18,356 INFO c.s.a.Main [main] Enter country:
-2022-12-20 01:00:06,760 INFO c.s.a.Main [main] 3
-2022-12-20 01:00:06,763 INFO c.s.a.Main [main] 3
-2022-12-20 01:00:06,769 INFO c.s.a.Main [main] Random countryCountry{name='Poland', city='Warshawa'}:
-2022-12-20 01:00:06,771 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 01:00:06,780 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 01:00:06,783 INFO c.s.a.Main [main] Enter country:
-2022-12-20 01:00:13,704 INFO c.s.a.Main [main] Our country is: Poland
-2022-12-20 01:00:13,706 INFO c.s.a.Main [main] Your flight:
-2022-12-20 01:00:13,707 INFO c.s.a.f.Flight [main] Departure Of Country: Belarus 
- City Of Country: Minsk 
- Country Of Destination: Poland 
-  City of Destination: Warshawa 
- Distance: 867 
- Departure Date: 2022-12-27T00:00:00.000+0300 
- Departure Time 08:00 
- Arrival Date 2022-12-28T00:00:00.000+0300 
- Travel Time 12 
- Price 8262 
-
-2022-12-20 01:00:13,708 INFO c.s.a.Main [main] Check out the rate: Economy,Comfort, Business...
-2022-12-20 01:00:19,060 INFO c.s.a.Main [main] Our ticket class is: ECONOMY
-2022-12-20 01:00:19,061 INFO c.s.a.Main [main] Price:8312
-2022-12-20 01:00:19,061 INFO c.s.a.Main [main] Do you want to buy a ticket? Enter 1 if yes, 0 if no.
-2022-12-20 01:00:22,058 INFO c.s.a.Main [main] Put your surname:
-2022-12-20 01:12:21,725 INFO c.s.a.Main [main] 3
-2022-12-20 01:12:21,728 INFO c.s.a.Main [main] 3
-2022-12-20 01:12:21,734 INFO c.s.a.Main [main] Random countryCountry{name='Russia', city='Sochi'}:
-2022-12-20 01:12:21,736 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 01:12:21,746 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 01:12:21,749 INFO c.s.a.Main [main] Enter country:
-2022-12-20 01:12:37,188 INFO c.s.a.Main [main] 3
-2022-12-20 01:12:37,190 INFO c.s.a.Main [main] 3
-2022-12-20 01:12:37,196 INFO c.s.a.Main [main] Random countryCountry{name='Russia', city='Sochi'}:
-2022-12-20 01:12:37,197 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 01:12:37,204 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 01:12:37,207 INFO c.s.a.Main [main] Enter country:
-2022-12-20 01:12:41,350 INFO c.s.a.Main [main] Our country is: Poland
-2022-12-20 01:12:41,352 INFO c.s.a.Main [main] Your flight:
-2022-12-20 01:12:41,353 INFO c.s.a.f.Flight [main] Departure Of Country: Belarus 
- City Of Country: Minsk 
- Country Of Destination: Poland 
-  City of Destination: Warshawa 
- Distance: 867 
- Departure Date: 2022-12-27T00:00:00.000+0300 
- Departure Time 08:00 
- Arrival Date 2022-12-28T00:00:00.000+0300 
- Travel Time 12 
- Price 8262 
-
-2022-12-20 01:12:41,353 INFO c.s.a.Main [main] Check out the rate: Economy,Comfort, Business...
-2022-12-20 01:12:46,991 INFO c.s.a.Main [main] Our ticket class is: ECONOMY
-2022-12-20 01:12:46,993 INFO c.s.a.Main [main] Result price:16624
-2022-12-20 01:12:46,993 INFO c.s.a.Main [main] Do you want to buy a ticket? Enter 1 if yes, 0 if no.
-2022-12-20 01:23:26,405 INFO c.s.a.f.FileIsReader [main] Reserved string = , . ! ?d ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ?ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ?ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA
-2022-12-20 01:23:26,411 INFO c.s.a.Main [main] 3
-2022-12-20 01:23:26,411 INFO c.s.a.Main [main] 3
-2022-12-20 01:23:26,416 INFO c.s.a.Main [main] Random countryCountry{name='Poland', city='Warshawa'}:
-2022-12-20 01:23:26,418 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 01:23:26,426 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 01:23:26,429 INFO c.s.a.Main [main] Enter country:
-2022-12-20 01:31:41,093 INFO c.s.a.f.FileIsReader [main] Reserved string = , . ! ?d ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ?ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ?ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA
-2022-12-20 01:31:41,097 INFO c.s.a.Main [main] 3
-2022-12-20 01:31:41,098 INFO c.s.a.Main [main] 3
-2022-12-20 01:31:41,099 INFO c.s.a.Main [main] Converter value: 7
-2022-12-20 01:31:41,104 INFO c.s.a.Main [main] Random countryCountry{name='Poland', city='Warshawa'}:
-2022-12-20 01:31:41,106 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 01:31:41,113 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 01:31:41,116 INFO c.s.a.Main [main] Enter country:
-2022-12-20 01:40:40,807 INFO c.s.a.f.FileIsReader [main] Reserved string = , . ! ?d ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ?ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ?ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA
-2022-12-20 01:40:40,807 INFO c.s.a.Main [main] 3
-2022-12-20 01:40:40,807 INFO c.s.a.Main [main] 3
-2022-12-20 01:40:40,815 INFO c.s.a.Main [main] Converter value: 7
-2022-12-20 01:40:40,815 INFO c.s.a.Main [main] Check: true
-2022-12-20 01:40:40,815 INFO c.s.a.Main [main] Random countryCountry{name='Russia', city='Sochi'}:
-2022-12-20 01:40:40,815 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 01:40:40,823 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 01:40:40,832 INFO c.s.a.Main [main] Enter country:
-2022-12-20 01:46:38,816 INFO c.s.a.f.FileIsReader [main] Reversed string = d ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA
-2022-12-20 01:46:38,820 INFO c.s.a.Main [main] 3
-2022-12-20 01:46:38,821 INFO c.s.a.Main [main] 3
-2022-12-20 01:46:38,822 INFO c.s.a.Main [main] Converter value: 7
-2022-12-20 01:46:38,824 INFO c.s.a.Main [main] Check: true
-2022-12-20 01:46:38,828 INFO c.s.a.Main [main] Random countryCountry{name='Russia', city='Sochi'}: 
-2022-12-20 01:46:38,830 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 01:46:38,838 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 01:46:38,841 INFO c.s.a.Main [main] Enter country:
-2022-12-20 01:48:13,501 INFO c.s.a.f.FileIsReader [main] Reversed string = d ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA
-2022-12-20 01:48:13,505 INFO c.s.a.Main [main] 3
-2022-12-20 01:48:13,505 INFO c.s.a.Main [main] 3
-2022-12-20 01:48:13,506 INFO c.s.a.Main [main] Converter value: 7
-2022-12-20 01:48:13,507 INFO c.s.a.Main [main] Check: true
-2022-12-20 01:48:13,511 INFO c.s.a.Main [main] Random countryCountry{name='Belarus', city='Minsk'}: 
-2022-12-20 01:48:13,512 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 01:48:13,519 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 01:48:13,521 INFO c.s.a.Main [main] Enter country:
-2022-12-20 02:00:24,170 INFO c.s.a.f.FileIsReader [main] Reversed string = d ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA
-2022-12-20 02:00:24,174 INFO c.s.a.Main [main] 3
-2022-12-20 02:00:24,174 INFO c.s.a.Main [main] 2
-2022-12-20 02:00:24,176 INFO c.s.a.Main [main] Converter value: 7
-2022-12-20 02:00:24,177 INFO c.s.a.Main [main] Check: true
-2022-12-20 02:00:24,181 INFO c.s.a.Main [main] Random countryCountry{name='Belarus', city='Minsk'}: 
-2022-12-20 02:00:24,182 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 02:00:24,191 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 02:00:24,194 INFO c.s.a.Main [main] Enter country:
-2022-12-20 02:00:31,625 INFO c.s.a.Main [main] Our country is: Poland
-2022-12-20 02:00:31,627 INFO c.s.a.Main [main] Your flight:
-2022-12-20 02:00:31,628 INFO c.s.a.f.Flight [main] Departure Of Country: Belarus 
- City Of Country: Minsk 
- Country Of Destination: Poland 
-  City of Destination: Warshawa 
- Distance: 867 
- Departure Date: 2022-12-27T00:00:00.000+0300 
- Departure Time 08:00 
- Arrival Date 2022-12-28T00:00:00.000+0300 
- Travel Time 12 
- Price 8262 
-
-2022-12-20 02:00:31,629 INFO c.s.a.Main [main] Check out the rate: Economy,Comfort, Business...
-2022-12-20 02:00:36,523 INFO c.s.a.Main [main] Our ticket class is: BUSINESS
-2022-12-20 02:00:36,525 INFO c.s.a.Main [main] Result price: 17024
-2022-12-20 02:00:36,526 INFO c.s.a.Main [main] Do you want to buy a ticket? Enter 1 if yes, 0 if no.
-2022-12-20 02:00:41,247 INFO c.s.a.Main [main] Put your name:
-2022-12-20 02:00:44,304 INFO c.s.a.Main [main] Put your surname:
-2022-12-20 02:00:50,634 INFO c.s.a.Main [main] HelloAnna!
-2022-12-20 02:00:50,634 INFO c.s.a.Main [main] Put passport number:
-2022-12-20 02:01:07,057 INFO c.s.a.f.FileIsReader [main] Reversed string = d ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA
-2022-12-20 02:01:07,061 INFO c.s.a.Main [main] 3
-2022-12-20 02:01:07,061 INFO c.s.a.Main [main] 2
-2022-12-20 02:01:07,063 INFO c.s.a.Main [main] Converter value: 7
-2022-12-20 02:01:07,064 INFO c.s.a.Main [main] Check: true
-2022-12-20 02:01:07,068 INFO c.s.a.Main [main] Random countryCountry{name='Poland', city='Warshawa'}: 
-2022-12-20 02:01:07,070 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 02:01:07,077 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 02:01:07,080 INFO c.s.a.Main [main] Enter country:
-2022-12-20 02:01:11,870 INFO c.s.a.Main [main] Our country is: Poland
-2022-12-20 02:01:11,873 INFO c.s.a.Main [main] Your flight:
-2022-12-20 02:01:11,873 INFO c.s.a.f.Flight [main] Departure Of Country: Belarus 
- City Of Country: Minsk 
- Country Of Destination: Poland 
-  City of Destination: Warshawa 
- Distance: 867 
- Departure Date: 2022-12-27T00:00:00.000+0300 
- Departure Time 08:00 
- Arrival Date 2022-12-28T00:00:00.000+0300 
- Travel Time 12 
- Price 8262 
-
-2022-12-20 02:01:11,874 INFO c.s.a.Main [main] Check out the rate: Economy,Comfort, Business...
-2022-12-20 02:01:16,319 INFO c.s.a.Main [main] Our ticket class is: BUSINESS
-2022-12-20 02:01:16,321 INFO c.s.a.Main [main] Result price: 17024
-2022-12-20 02:01:16,321 INFO c.s.a.Main [main] Do you want to buy a ticket? Enter 1 if yes, 0 if no.
-2022-12-20 02:01:18,759 INFO c.s.a.Main [main] Put your name:
-2022-12-20 02:01:21,182 INFO c.s.a.Main [main] Put your surname:
-2022-12-20 02:01:25,478 INFO c.s.a.Main [main] HelloAnna!
-2022-12-20 02:01:25,478 INFO c.s.a.Main [main] Put passport number:
-2022-12-20 02:01:29,275 INFO c.s.a.Main [main] Passenger{numberOfPassport=234}
-2022-12-20 10:54:46,622 INFO c.s.a.f.FileIsReader [main] Reversed string = d ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA
-2022-12-20 10:54:46,628 INFO c.s.a.Main [main] 3
-2022-12-20 10:54:46,628 INFO c.s.a.Main [main] 2
-2022-12-20 10:54:46,630 INFO c.s.a.Main [main] Converter value: 7
-2022-12-20 10:54:46,631 INFO c.s.a.Main [main] Check: true
-2022-12-20 10:54:46,636 INFO c.s.a.Main [main] Random countryCountry{name='Poland', city='Warshawa'}: 
-2022-12-20 10:54:46,638 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 10:54:46,645 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 10:54:46,647 INFO c.s.a.Main [main] Enter country:
-2022-12-20 10:55:04,155 INFO c.s.a.Main [main] Our country is: Poland
-2022-12-20 10:55:04,157 INFO c.s.a.Main [main] Your flight:
-2022-12-20 10:55:04,158 INFO c.s.a.f.Flight [main] Departure Of Country: Belarus 
- City Of Country: Minsk 
- Country Of Destination: Poland 
-  City of Destination: Warshawa 
- Distance: 867 
- Departure Date: 2022-12-27T00:00:00.000+0300 
- Departure Time 08:00 
- Arrival Date 2022-12-28T00:00:00.000+0300 
- Travel Time 12 
- Price 8262 
-
-2022-12-20 10:55:04,158 INFO c.s.a.Main [main] Check out the rate: Economy,Comfort, Business...
-2022-12-20 10:55:08,337 INFO c.s.a.Main [main] Our ticket class is: ECONOMY
-2022-12-20 10:55:08,339 INFO c.s.a.Main [main] Result price: 16624
-2022-12-20 10:55:08,340 INFO c.s.a.Main [main] Do you want to buy a ticket? Enter 1 if yes, 0 if no.
-2022-12-20 10:55:11,350 INFO c.s.a.Main [main] Put your name:
-2022-12-20 10:55:28,425 INFO c.s.a.f.FileIsReader [main] Reversed string = d ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA
-2022-12-20 10:55:28,430 INFO c.s.a.Main [main] 3
-2022-12-20 10:55:28,430 INFO c.s.a.Main [main] 2
-2022-12-20 10:55:28,431 INFO c.s.a.Main [main] Converter value: 7
-2022-12-20 10:55:28,432 INFO c.s.a.Main [main] Check: true
-2022-12-20 10:55:28,436 INFO c.s.a.Main [main] Random countryCountry{name='Belarus', city='Minsk'}: 
-2022-12-20 10:55:28,438 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
-2022-12-20 10:55:28,445 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
-2022-12-20 10:55:28,447 INFO c.s.a.Main [main] Enter country:
-2022-12-20 10:56:31,941 INFO c.s.a.Main [main] Our country is: Poland
-2022-12-20 10:56:31,943 INFO c.s.a.Main [main] Your flight:
-2022-12-20 10:56:31,944 INFO c.s.a.f.Flight [main] Departure Of Country: Belarus 
- City Of Country: Minsk 
- Country Of Destination: Poland 
-  City of Destination: Warshawa 
- Distance: 867 
- Departure Date: 2022-12-27T00:00:00.000+0300 
- Departure Time 08:00 
- Arrival Date 2022-12-28T00:00:00.000+0300 
- Travel Time 12 
- Price 8262 
-
-2022-12-20 10:56:31,944 INFO c.s.a.Main [main] Check out the rate: Economy,Comfort, Business...
-2022-12-20 10:56:37,413 INFO c.s.a.Main [main] Our ticket class is: BUSINESS
-2022-12-20 10:56:37,415 INFO c.s.a.Main [main] Result price: 17024
-2022-12-20 10:56:37,415 INFO c.s.a.Main [main] Do you want to buy a ticket? Enter 1 if yes, 0 if no.
-2022-12-20 10:56:40,345 INFO c.s.a.Main [main] Put your name:
-2022-12-20 10:56:43,312 INFO c.s.a.Main [main] Put your surname:
-2022-12-20 10:56:48,574 INFO c.s.a.Main [main] HelloAnna!
-2022-12-20 10:56:48,575 INFO c.s.a.Main [main] Put passport number:
-2022-12-20 10:56:52,971 INFO c.s.a.Main [main] Passenger{numberOfPassport=2345}
-2022-12-20 10:56:52,987 INFO c.s.a.Main [main] Our ticket:Ticket{numberOfTicket=234, flight=Flight{departure=Country{name='Belarus', city='Minsk'}, destination=Country{name='Poland', city='Warshawa'}, distance=867, departureDate=Tue Dec 27 00:00:00 MSK 2022, departureTime='08:00', arrivalDate=Wed Dec 28 00:00:00 MSK 2022, travelTime=12, price=8262}, plane=Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, passenger=Passenger{numberOfPassport=2345}, price=8512}
+2022-12-23 00:50:23,325 INFO c.s.a.Main [main] Check out the rate: Economy,Comfort, Business...
+2022-12-23 00:50:28,930 INFO c.s.a.Main [main] Our ticket class is: ECONOMY
+2022-12-23 00:50:28,932 INFO c.s.a.Main [main] Result price: 16624
+2022-12-23 00:50:28,933 INFO c.s.a.Main [main] Do you want to buy a ticket? Enter 1 if yes, 0 if no.
+2022-12-23 00:50:31,587 INFO c.s.a.Main [main] Put your name:
+2022-12-23 00:50:39,790 INFO c.s.a.Main [main] Put your surname:
+2022-12-23 00:50:46,177 INFO c.s.a.Main [main] HelloVasiliy!
+2022-12-23 00:50:46,177 INFO c.s.a.Main [main] Put passport number:
+2022-12-23 00:50:52,627 INFO c.s.a.Main [main] Passenger{numberOfPassport=6543}
+2022-12-23 00:50:52,643 INFO c.s.a.Main [main] Our ticket:Ticket{numberOfTicket=234, flight=Flight{departure=Country{name='Belarus', city='Minsk'}, destination=Country{name='Poland', city='Warshawa'}, distance=867, departureDate=Tue Dec 27 00:00:00 MSK 2022, departureTime='08:00', arrivalDate=Wed Dec 28 00:00:00 MSK 2022, travelTime=12, price=8262}, plane=Optional[Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}], passenger=Passenger{numberOfPassport=6543}, price=8312}
+2022-12-23 00:50:52,644 INFO c.s.a.Main [main] 1

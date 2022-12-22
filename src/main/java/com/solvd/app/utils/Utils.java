@@ -5,7 +5,6 @@ import com.solvd.app.classesstickets.TicketClass;
 import com.solvd.app.countries.Country;
 import com.solvd.app.flight.Flight;
 import com.solvd.app.person.Passenger;
-import com.solvd.app.person.Person;
 import com.solvd.app.person.Pilot;
 import com.solvd.app.plane.Plane;
 import com.solvd.app.tickets.Ticket;
@@ -13,6 +12,7 @@ import com.solvd.app.tickets.Ticket;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.stream.Stream;
 
 public class Utils {
     static SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
@@ -30,13 +30,28 @@ public class Utils {
         return flights;
     }
 
+    public static Flight findACheapFlight(List<Flight> flights) {
+
+        /*Optional<Flight> cheapFlight = flights.stream().filter((flightElement)->min.flightElement.min(String::compareTo).get()
+        Flight resultCheapFlight = cheapFlight.get();
+        return resultCheapFlight;
+        //collection.stream().min(String::compareTo).get()*/
+        return null;
+    }
+
     public static Flight searchOfFlight(List<Flight> flights, String nameOfCountry) {
-        for (Flight flight : flights) {
+
+        /*for (Flight flight : flights) {
             if (nameOfCountry.equals(flight.getDestination().getName())) {
                 return flight;
             }
         }
-        return null;
+        return null;*/
+
+        // Stream  с терминальной операцией(2)
+        Optional<Flight> flight = flights.stream().filter((flightElement) -> flightElement.getDestination().getName().equals(nameOfCountry)).findFirst();
+        Flight flight1 = flight.get();
+        return flight1;
     }
 
     public static Map<TicketClass, ClassOfTickets> addClassTicket() {
@@ -47,11 +62,9 @@ public class Utils {
 
     public static List<Country> createListOfCountry() {
 
-        List<Country> countries = new ArrayList<>();
-        countries.add(new Country("Belarus", "Minsk"));
-        countries.add(new Country("Poland", "Warshawa"));
-        countries.add(new Country("Russia", "Sochi"));
-
+        //использование stream (3)
+        List<Country> countries = Arrays.asList(new Country("Belarus", "Minsk"), new Country("Poland", "Warshawa"), new Country("Russia", "Sochi"));
+        Stream<Country> countryStream = countries.stream();
         return countries;
     }
 
@@ -64,7 +77,7 @@ public class Utils {
         return pilots;
     }
 
-    public static final int getPriceOfFlight(Flight foundFlight, ClassOfTickets classOfTickets) {
+    public static int getPriceOfFlight(Flight foundFlight, ClassOfTickets classOfTickets) {
         int price = foundFlight.getPrice() + classOfTickets.getTicketFare();
         return price;
     }
@@ -79,17 +92,34 @@ public class Utils {
         return planes;
     }
 
-    public static Passenger createPassengerList(String name, String surname,int number)
-    {
-        Passenger passenger = new Passenger(name,surname,number);
-        /*List<Person> passengers = new ArrayList<>();
-        passengers.add(new Passenger(surname,name,number));*/
+    public static Optional<Plane> getAPlaneFromTheList(HashSet<Plane> planes) {
+        //использование терминальной операции findAny StreamAPI(4)
+        Optional<Plane> anyPlane = planes.stream().findAny();
+        anyPlane.get();
+        return anyPlane;
+    }
+
+    public static List<Passenger> createPassengerList() {
+        List<Passenger> passengers = new ArrayList<>();
+        passengers.add(new Passenger("Anna", "Sirozh", 2345));
+        passengers.add(new Passenger("Pavel", "Makarski", 5674));
+        return passengers;
+    }
+
+    public static long countHowManyTimesThePassengerUsedTheAirline(List<Passenger> passengers, Passenger passenger) {
+        //использование конвейерного stream переходящего в терминальный(5)
+        long count = passengers.stream().filter(passenger::equals).count();
+        return count;
+    }
+
+    public static Passenger addPassengerToList(String name, String surname, int number, List<Passenger> passengers) {
+        Passenger passenger = new Passenger(name, surname, number);
+        passengers.add(passenger);
         return passenger;
     }
-    public static Ticket createTicketList(int numberOfTicket, Flight flight, Plane plane, Passenger passenger, int price)
-    {
-        Ticket ticket=new Ticket(numberOfTicket, flight,plane, passenger,price);
-        return ticket;
 
+    public static Ticket createTicketList(int numberOfTicket, Flight flight, Optional<Plane> plane, Passenger passenger, int price) {
+        Ticket ticket = new Ticket(numberOfTicket, flight, plane, passenger, price);
+        return ticket;
     }
 }

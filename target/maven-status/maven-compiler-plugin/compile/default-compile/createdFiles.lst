@@ -10,7 +10,6 @@ com\solvd\app\person\Person.class
 com\solvd\app\DisplayInformation.class
 com\solvd\app\exceptions\ENameOfCountryIsNULL.class
 com\solvd\app\exceptions\EFoundFlightISNULL.class
-com\solvd\app\Main.class
 com\solvd\app\flight\Flight.class
 com\solvd\app\plane\PassengerPlane.class
 com\solvd\app\exceptions\ECountryException.class
