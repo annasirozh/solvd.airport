@@ -386,3 +386,69 @@
 2022-12-23 02:45:09,043 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
 2022-12-23 02:45:09,044 INFO c.s.a.Main [main] List of passengers[Passenger{numberOfPassport=2345}, Passenger{numberOfPassport=5674}]
 2022-12-23 02:45:09,047 INFO c.s.a.Main [main] Enter country:
+2022-12-23 18:36:42,899 INFO c.s.a.Main [main] Constructor:
+2022-12-23 18:36:42,902 INFO c.s.a.Main [main] com.solvd.app.reflection.Order
+2022-12-23 18:36:42,902 INFO c.s.a.Main [main] public
+2022-12-23 18:36:42,903 INFO c.s.a.Main [main] [Ljava.lang.Class;@25084a1e
+2022-12-23 18:36:42,903 INFO c.s.a.Main [main] int
+2022-12-23 18:36:42,903 INFO c.s.a.Main [main] Method:
+2022-12-23 18:36:42,904 INFO c.s.a.Main [main] Name of methods:toString
+2022-12-23 18:36:42,904 INFO c.s.a.Main [main] public
+2022-12-23 18:36:42,904 INFO c.s.a.Main [main] java.lang.String
+2022-12-23 18:36:42,904 INFO c.s.a.Main [main] Name of methods:getInformation
+2022-12-23 18:36:42,905 INFO c.s.a.Main [main] int
+2022-12-23 18:36:42,905 INFO c.s.a.Main [main] public
+2022-12-23 18:36:42,906 INFO c.s.a.Main [main] int
+2022-12-23 18:36:42,906 INFO c.s.a.Main [main] Field:
+2022-12-23 18:36:42,907 INFO c.s.a.Main [main] Name of fields:numberOfOrder
+2022-12-23 18:36:42,907 INFO c.s.a.Main [main] Type of fields:int
+2022-12-23 18:36:42,907 INFO c.s.a.Main [main] private
+2022-12-23 18:36:42,908 INFO c.s.a.Main [main] Name of fields:numberOfTicket
+2022-12-23 18:36:42,908 INFO c.s.a.Main [main] Type of fields:int
+2022-12-23 18:36:42,908 INFO c.s.a.Main [main] private
+2022-12-23 18:36:42,908 INFO c.s.a.Main [main] Name of fields:paymentState
+2022-12-23 18:36:42,908 INFO c.s.a.Main [main] Type of fields:boolean
+2022-12-23 18:36:42,908 INFO c.s.a.Main [main] private
+2022-12-23 18:36:42,925 INFO c.s.a.f.FileIsReader [main] Reversed string = d ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA
+2022-12-23 18:36:42,928 INFO c.s.a.Main [main] 3
+2022-12-23 18:36:42,928 INFO c.s.a.Main [main] 2
+2022-12-23 18:36:42,930 INFO c.s.a.Main [main] Converter value: 7
+2022-12-23 18:36:42,931 INFO c.s.a.Main [main] Check: true
+2022-12-23 18:36:42,936 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
+2022-12-23 18:36:42,959 INFO c.s.a.Main [main] cheap flight: Optional[Flight{departure=Country{name='Belarus', city='Minsk'}, destination=Country{name='Poland', city='Warshawa'}, distance=867, departureDate=Tue Dec 27 00:00:00 MSK 2022, departureTime='08:00', arrivalDate=Wed Dec 28 00:00:00 MSK 2022, travelTime=12, price=8262}]
+2022-12-23 18:36:42,962 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
+2022-12-23 18:36:42,963 INFO c.s.a.Main [main] List of passengers[Passenger{numberOfPassport=2345}, Passenger{numberOfPassport=5674}]
+2022-12-23 18:36:42,966 INFO c.s.a.Main [main] Enter country:
+2022-12-23 18:38:35,312 INFO c.s.a.Main [main] Constructor:
+2022-12-23 18:38:35,313 INFO c.s.a.Main [main] com.solvd.app.reflection.Order
+2022-12-23 18:38:35,314 INFO c.s.a.Main [main] public
+2022-12-23 18:38:35,314 INFO c.s.a.Main [main] [Ljava.lang.reflect.TypeVariable;@25084a1e
+2022-12-23 18:38:35,314 INFO c.s.a.Main [main] int
+2022-12-23 18:38:35,314 INFO c.s.a.Main [main] Method:
+2022-12-23 18:38:35,315 INFO c.s.a.Main [main] Name of methods:toString
+2022-12-23 18:38:35,315 INFO c.s.a.Main [main] public
+2022-12-23 18:38:35,315 INFO c.s.a.Main [main] java.lang.String
+2022-12-23 18:38:35,315 INFO c.s.a.Main [main] Name of methods:getInformation
+2022-12-23 18:38:35,315 INFO c.s.a.Main [main] int
+2022-12-23 18:38:35,315 INFO c.s.a.Main [main] public
+2022-12-23 18:38:35,316 INFO c.s.a.Main [main] int
+2022-12-23 18:38:35,316 INFO c.s.a.Main [main] Field:
+2022-12-23 18:38:35,316 INFO c.s.a.Main [main] Name of fields:numberOfOrder
+2022-12-23 18:38:35,316 INFO c.s.a.Main [main] Type of fields:int
+2022-12-23 18:38:35,316 INFO c.s.a.Main [main] private
+2022-12-23 18:38:35,316 INFO c.s.a.Main [main] Name of fields:numberOfTicket
+2022-12-23 18:38:35,317 INFO c.s.a.Main [main] Type of fields:int
+2022-12-23 18:38:35,317 INFO c.s.a.Main [main] private
+2022-12-23 18:38:35,317 INFO c.s.a.Main [main] Name of fields:paymentState
+2022-12-23 18:38:35,317 INFO c.s.a.Main [main] Type of fields:boolean
+2022-12-23 18:38:35,317 INFO c.s.a.Main [main] private
+2022-12-23 18:38:35,328 INFO c.s.a.f.FileIsReader [main] Reversed string = d ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA ti od yeht od woH stcudorp ralucitrap yub ot su edausrep ot tnaw stnemesitrevdA
+2022-12-23 18:38:35,329 INFO c.s.a.Main [main] 3
+2022-12-23 18:38:35,329 INFO c.s.a.Main [main] 2
+2022-12-23 18:38:35,331 INFO c.s.a.Main [main] Converter value: 7
+2022-12-23 18:38:35,331 INFO c.s.a.Main [main] Check: true
+2022-12-23 18:38:35,335 INFO c.s.a.Main [main] List Of pilot [Person{nameOfPerson='Павел', surnameOfPerson='Кичкайло'}, Person{nameOfPerson='Василий', surnameOfPerson='Зарницкий'}]:
+2022-12-23 18:38:35,355 INFO c.s.a.Main [main] cheap flight: Optional[Flight{departure=Country{name='Belarus', city='Minsk'}, destination=Country{name='Poland', city='Warshawa'}, distance=867, departureDate=Tue Dec 27 00:00:00 MSK 2022, departureTime='08:00', arrivalDate=Wed Dec 28 00:00:00 MSK 2022, travelTime=12, price=8262}]
+2022-12-23 18:38:35,359 INFO c.s.a.Main [main] List of available aircraft [Plane{modelPlane=345, maxSpeedPlane=6125, maxWeight=590}, Plane{modelPlane=2345, maxSpeedPlane=7200, maxWeight=769}]:
+2022-12-23 18:38:35,359 INFO c.s.a.Main [main] List of passengers[Passenger{numberOfPassport=2345}, Passenger{numberOfPassport=5674}]
+2022-12-23 18:38:35,363 INFO c.s.a.Main [main] Enter country:

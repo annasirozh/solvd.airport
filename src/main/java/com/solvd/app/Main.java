@@ -40,12 +40,13 @@ public class Main {
         //вызов метода
         Method getInformation = foundClass.getMethod("getInformation", int.class);
         getInformation.invoke(order,3);
+
         LOGGER.info("Constructor:");
         Constructor[] constructors = foundClass.getDeclaredConstructors();
         for (Constructor constructor : constructors) {
             LOGGER.info(constructor.getName());
             LOGGER.info(Modifier.toString(constructor.getModifiers()));
-            LOGGER.info(constructor.getGenericParameterTypes());
+            LOGGER.info(constructor.getTypeParameters());
             Parameter[] parameters = constructor.getParameters();
             for (Parameter parametr : parameters) {
                 LOGGER.info(parametr.getType().getName());
@@ -66,8 +67,8 @@ public class Main {
         Field[] fields = foundClass.getDeclaredFields();
         for (Field field:fields) {
             LOGGER.info("Name of fields:" + field.getName());
-            LOGGER.info(Modifier.toString(field.getModifiers()));
             LOGGER.info("Type of fields:" + field.getType());
+            LOGGER.info(Modifier.toString(field.getModifiers()));
         }
 
         // подсчет уникальных значений
