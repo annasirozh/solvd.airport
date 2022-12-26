@@ -108,8 +108,8 @@ public class Utils {
 
     public static long countHowManyTimesThePassengerUsedTheAirline(List<Passenger> passengers, Passenger passenger) {
         //использование конвейерного stream переходящего в терминальный(5)
-        long count = passengers.stream().filter(passenger::equals).count();
-        return count;
+        return passengers.stream().filter(passenger::equals).count();
+
     }
 
     public static Passenger addPassengerToList(String name, String surname, int number, List<Passenger> passengers) {

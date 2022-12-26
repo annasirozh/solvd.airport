@@ -9,6 +9,11 @@ public class MyOwnLinkedlist<T> {
     private Node<T> lastNode;
     private int size = 0;
 
+    public int getSize() {
+        return size;
+
+    }
+
     public void addFirst(T current) {
         Node<T> currentNode;
         if (size == 0) {
@@ -73,11 +78,6 @@ public class MyOwnLinkedlist<T> {
         }
 
         System.out.println(strings);
-    }
-
-    public int getSize() {
-        return size;
-
     }
 
     public void removeAll() {

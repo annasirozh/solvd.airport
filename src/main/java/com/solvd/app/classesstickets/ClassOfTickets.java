@@ -12,7 +12,15 @@ public final class ClassOfTickets {
     TicketClass nameOfClassTicket;
     private int maxWeightHandLuggage;
     private int ticketFare;
-    private int countOfplacesForHandLuggage;
+    private int countOfPlacesForHandLuggage;
+
+    public ClassOfTickets(TicketClass nameOfClassTicket, int maxWeightHandLuggage, int ticketFare, int countOfplacesForHandLuggage) {
+        this.nameOfClassTicket = nameOfClassTicket;
+        this.maxWeightHandLuggage = maxWeightHandLuggage;
+        this.ticketFare = ticketFare;
+        this.countOfPlacesForHandLuggage = countOfplacesForHandLuggage;
+    }
+
 
     public TicketClass getNameOfClassTicket() {
         return nameOfClassTicket;
@@ -39,18 +47,11 @@ public final class ClassOfTickets {
     }
 
     public int getCountOfplacesForHandLuggage() {
-        return countOfplacesForHandLuggage;
+        return countOfPlacesForHandLuggage;
     }
 
     public void setCountOfplacesForHandLuggage(int countOfplacesForHandLuggage) {
-        this.countOfplacesForHandLuggage = countOfplacesForHandLuggage;
-    }
-
-    public ClassOfTickets(TicketClass nameOfClassTicket, int maxWeightHandLuggage, int ticketFare, int countOfplacesForHandLuggage) {
-        this.nameOfClassTicket = nameOfClassTicket;
-        this.maxWeightHandLuggage = maxWeightHandLuggage;
-        this.ticketFare = ticketFare;
-        this.countOfplacesForHandLuggage = countOfplacesForHandLuggage;
+        this.countOfPlacesForHandLuggage = countOfplacesForHandLuggage;
     }
 
     @Override
@@ -59,7 +60,7 @@ public final class ClassOfTickets {
                 "nameOfClassTicket=" + nameOfClassTicket +
                 ", maxWeightHandLuggage=" + maxWeightHandLuggage +
                 ", ticketFare=" + ticketFare +
-                ", countOfplacesForHandLuggage=" + countOfplacesForHandLuggage +
+                ", countOfplacesForHandLuggage=" + countOfPlacesForHandLuggage +
                 '}';
     }
 
@@ -68,16 +69,19 @@ public final class ClassOfTickets {
         if (this == o) return true;
         if (!(o instanceof ClassOfTickets)) return false;
         ClassOfTickets that = (ClassOfTickets) o;
-        return maxWeightHandLuggage == that.maxWeightHandLuggage && ticketFare == that.ticketFare && countOfplacesForHandLuggage == that.countOfplacesForHandLuggage && nameOfClassTicket == that.nameOfClassTicket;
+        return maxWeightHandLuggage == that.maxWeightHandLuggage && ticketFare == that.ticketFare
+                && countOfPlacesForHandLuggage == that.countOfPlacesForHandLuggage && nameOfClassTicket == that.nameOfClassTicket;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nameOfClassTicket, maxWeightHandLuggage, ticketFare, countOfplacesForHandLuggage);
+        return Objects.hash(nameOfClassTicket, maxWeightHandLuggage, ticketFare, countOfPlacesForHandLuggage);
     }
 
     public void displayInformationAboutClassOfTickets() {
-        LOGGER.info("Name of class ticket: %s \n, Max weight hand Luggage: %d \n, Ticket fare: %d \n,Count of places for hand luggage: %d \n", nameOfClassTicket, maxWeightHandLuggage, ticketFare, countOfplacesForHandLuggage);
+        LOGGER.info("Name of class ticket: %s \n, Max weight hand Luggage: %d \n, Ticket fare: %d" +
+                " \n,Count of places for hand luggage: %d \n", nameOfClassTicket, maxWeightHandLuggage, ticketFare,
+                countOfPlacesForHandLuggage);
         //System.out.printf("Name of class ticket: %s \n, Max weight hand Luggage: %d \n, Ticket fare: %d \n,Count of places for hand luggage: %d \n", nameOfClassTicket,maxWeightHandLuggage,ticketFare,countOfplacesForHandLuggage);
     }
 

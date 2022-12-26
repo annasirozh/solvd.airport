@@ -48,8 +48,8 @@ public class Main {
             LOGGER.info(Modifier.toString(constructor.getModifiers()));
             LOGGER.info(constructor.getTypeParameters());
             Parameter[] parameters = constructor.getParameters();
-            for (Parameter parametr : parameters) {
-                LOGGER.info(parametr.getType().getName());
+            for (Parameter parameter : parameters) {
+                LOGGER.info(parameter.getType().getName());
             }
         }
         LOGGER.info("Method:");
@@ -57,8 +57,8 @@ public class Main {
         for (Method method : methods) {
             LOGGER.info("Name of methods:" + method.getName());
             Parameter[] parameters = method.getParameters();
-            for (Parameter parametr : parameters) {
-                LOGGER.info(parametr.getType().getName());
+            for (Parameter parameter : parameters) {
+                LOGGER.info(parameter.getType().getName());
             }
             LOGGER.info(Modifier.toString(method.getModifiers()));
             LOGGER.info(method.getReturnType().getName());

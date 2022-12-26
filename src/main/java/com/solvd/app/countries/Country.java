@@ -11,7 +11,6 @@ public class Country {
         this.city = city;
     }
 
-
     public String getName() {
         return name;
     }
