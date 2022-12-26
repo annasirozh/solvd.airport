@@ -173,7 +173,6 @@ public class Main {
 
             Optional<Plane> randomPlane = Utils.getAPlaneFromTheList(planes);
 
-           // Plane plane1 = new Plane(345, 6125, 590);
             Passenger passenger = Utils.addPassengerToList(nameOfPassenger,surnamePassenger,numberOfPassport,passengers);
             LOGGER.info(passenger);
             Ticket ticket = Utils.createTicketList(234, foundFlight, randomPlane, passenger,price);
